@@ -682,5 +682,13 @@
 		<key>extensions</key>
 		<string>fs</string>
 	</dict>
+	<dict>
+		<key>name</key>
+		<string>Marta Configuration</string>
+		<key>file</key>
+		<string>marco</string>
+		<key>extensions</key>
+		<string>marco</string>
+	</dict>
 </array>
 </plist>
