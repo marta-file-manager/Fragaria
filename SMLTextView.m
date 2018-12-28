@@ -1075,6 +1075,12 @@ static unichar ClosingBraceForOpeningBrace(unichar c)
                 }
                 if ([lastLineString characterAtIndex:idx] == '{') {
                     [self insertTab:nil];
+                    NSRange oldSelectedRange = [super selectedRange];
+                    [super insertNewline:sender];
+                    if (previousLineWhitespaceString) {
+                        [super insertText:previousLineWhitespaceString];
+                    }
+                    [super setSelectedRange:oldSelectedRange];
                 }
                 break;
             }
