@@ -317,7 +317,7 @@
         i++;
     }
 
-    font = [NSFont systemFontOfSize:10];
+    font = [NSFont systemFontOfSize:12];
     parStyle = [[NSParagraphStyle defaultParagraphStyle] mutableCopy];
     [parStyle setParagraphSpacing:kSMLErrorPopOverErrorSpacing];
     [errorsString addAttributes: @{NSParagraphStyleAttributeName: parStyle,
