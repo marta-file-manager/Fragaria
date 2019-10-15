@@ -571,6 +571,7 @@
 		01FBC7EC1B0679520008EAF8 /* MGSMutableSubstring.m in Sources */ = {isa = PBXBuildFile; fileRef = 01FBC7EA1B0679520008EAF8 /* MGSMutableSubstring.m */; };
 		01FC487F1C1C7EC600F4227E /* Fragaria.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AB69B62B118B745700903D1D /* Fragaria.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		01FC685B21D3FBCC001E0124 /* MGSParserFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 01FC685A21D3FBCC001E0124 /* MGSParserFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CFF45F32356278200022D52 /* marco.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2CFF45F22356278200022D52 /* marco.plist */; };
 		AB257FCE129B1BF500A3FF76 /* MGSTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = AB69B666118B768000903D1D /* MGSTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AB257FE0129B1CE300A3FF76 /* MGSSyntaxController.h in Headers */ = {isa = PBXBuildFile; fileRef = AB3971C8118C1F8A00AEF388 /* MGSSyntaxController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AB3971CB118C1F8A00AEF388 /* MGSSyntaxController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3971C9118C1F8A00AEF388 /* MGSSyntaxController.m */; };
@@ -1483,6 +1484,7 @@
 		256AC3D90F4B6AC300CF3369 /* FragariaAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FragariaAppDelegate.m; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		2CFF45F22356278200022D52 /* marco.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = marco.plist; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB3971C8118C1F8A00AEF388 /* MGSSyntaxController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSSyntaxController.h; sourceTree = "<group>"; };
 		AB3971C9118C1F8A00AEF388 /* MGSSyntaxController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSSyntaxController.m; sourceTree = "<group>"; };
@@ -1767,6 +1769,7 @@
 				01086FEE1C99E16E00C335DA /* verilog.plist */,
 				01086FEF1C99E16E00C335DA /* vhdl.plist */,
 				01086FF01C99E16E00C335DA /* xml.plist */,
+				2CFF45F22356278200022D52 /* marco.plist */,
 			);
 			path = "Additional Syntax Definitions";
 			sourceTree = "<group>";
@@ -2604,6 +2607,7 @@
 				D00BB055213876A3007E5FA6 /* SMLDetab.xib in Resources */,
 				ABA812DC11B6855200A29990 /* LICENSE-2.0.txt in Resources */,
 				D00BB056213876A3007E5FA6 /* SMLEntab.xib in Resources */,
+				2CFF45F32356278200022D52 /* marco.plist in Resources */,
 				D00BB054213876A3007E5FA6 /* MGSContextMenu.xib in Resources */,
 				D00BB053213876A3007E5FA6 /* SMLGoToLine.xib in Resources */,
 				D00BB069213876F3007E5FA6 /* Localizable.strings in Resources */,
@@ -3474,7 +3478,7 @@
 				PLIST_FILE_OUTPUT_FORMAT = binary;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mugginsoft.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Fragaria;
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Testing;
@@ -3553,7 +3557,7 @@
 				PLIST_FILE_OUTPUT_FORMAT = binary;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mugginsoft.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Fragaria;
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -3586,7 +3590,7 @@
 				PLIST_FILE_OUTPUT_FORMAT = binary;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mugginsoft.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Fragaria;
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
