@@ -572,6 +572,7 @@
 		01FC487F1C1C7EC600F4227E /* Fragaria.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AB69B62B118B745700903D1D /* Fragaria.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		01FC685B21D3FBCC001E0124 /* MGSParserFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 01FC685A21D3FBCC001E0124 /* MGSParserFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2CFF45F32356278200022D52 /* marco.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2CFF45F22356278200022D52 /* marco.plist */; };
+		2CFF45F4235629F000022D52 /* marco.plist in Copy Syntax Definitions */ = {isa = PBXBuildFile; fileRef = 2CFF45F22356278200022D52 /* marco.plist */; };
 		AB257FCE129B1BF500A3FF76 /* MGSTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = AB69B666118B768000903D1D /* MGSTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AB257FE0129B1CE300A3FF76 /* MGSSyntaxController.h in Headers */ = {isa = PBXBuildFile; fileRef = AB3971C8118C1F8A00AEF388 /* MGSSyntaxController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AB3971CB118C1F8A00AEF388 /* MGSSyntaxController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3971C9118C1F8A00AEF388 /* MGSSyntaxController.m */; };
@@ -728,6 +729,7 @@
 			dstSubfolderSpec = 7;
 			files = (
 				010890C82268C3ED00A874FF /* none.plist in Copy Syntax Definitions */,
+				2CFF45F4235629F000022D52 /* marco.plist in Copy Syntax Definitions */,
 			);
 			name = "Copy Syntax Definitions";
 			runOnlyForDeploymentPostprocessing = 0;
