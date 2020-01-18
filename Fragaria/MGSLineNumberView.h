@@ -89,6 +89,8 @@
 /** Indicates whether or not line numbers should be drawn. */
 @property (nonatomic, assign) BOOL showsLineNumbers;
 
+/** Indicates whether or not the separator should be drawn. */
+@property (nonatomic, assign) BOOL showsSeparator;
 
 /// @name Instance Methods
 

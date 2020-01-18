@@ -87,6 +87,7 @@ typedef enum {
         _fragaria = fragaria;
         
         _showsLineNumbers = YES;
+        _showsSeparator = YES;
         _backgroundColor = [NSColor controlBackgroundColor];
         _minimumWidth = 40;
         
@@ -138,6 +139,13 @@ typedef enum {
 - (void)setShowsLineNumbers:(BOOL)drawsLineNumbers
 {
     _showsLineNumbers = drawsLineNumbers;
+    [self setRuleThickness:[self requiredThickness]];
+    [self setNeedsDisplay:YES];
+}
+
+- (void)setShowsSeparator:(BOOL)showsSeparator
+{
+    _showsSeparator = showsSeparator;
     [self setRuleThickness:[self requiredThickness]];
     [self setNeedsDisplay:YES];
 }
@@ -439,6 +447,8 @@ typedef enum {
 
 - (void)drawBackgroundInRect:(NSRect)dirtyRect
 {
+    if (!_showsSeparator)
+        return;
     NSRect bounds, visibleRect;
     NSBezierPath *dottedLine;
     NSColor *dotColor, *borderColor;

@@ -423,6 +423,21 @@
 
 
 /*
+ * @property showsLineNumbers
+ */
+- (void)setShowsGutterSeparator:(BOOL)showsGutterSeparator
+{
+    self.gutterView.showsSeparator = showsGutterSeparator;
+    [self mgs_propagateValue:@(showsGutterSeparator) forBinding:NSStringFromSelector(@selector(showsGutterSeparator))];
+}
+
+- (BOOL)showsGutterSeparator
+{
+    return self.gutterView.showsSeparator;
+}
+
+
+/*
  * @property gutterFont
  */
 - (void)setGutterFont:(NSFont *)gutterFont

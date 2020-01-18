@@ -199,6 +199,9 @@ IB_DESIGNABLE
 /** Specifies the starting line number in the text view.*/
 @property (nonatomic, assign) NSUInteger startingLineNumber;
 
+/** Indicates whether or not the separator are displayed when the gutter is visible.*/
+@property (nonatomic, assign) BOOL showsGutterSeparator;
+
 /** Specifies the standard font for the line numbers in the gutter.*/
 @property (nonatomic, assign) IBInspectable NSFont *gutterFont;
 /** Specifies the standard color of the line numbers in the gutter.*/
