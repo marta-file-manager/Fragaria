@@ -447,8 +447,6 @@ typedef enum {
 
 - (void)drawBackgroundInRect:(NSRect)dirtyRect
 {
-    if (!_showsSeparator)
-        return;
     NSRect bounds, visibleRect;
     NSBezierPath *dottedLine;
     NSColor *dotColor, *borderColor;
@@ -459,6 +457,9 @@ typedef enum {
     
     [self.backgroundColor set];
     NSRectFill(bounds);
+    
+    if (!_showsSeparator)
+        return;
     
     borderColor = [self.backgroundColor blendedColorWithFraction:.5 ofColor:self.clientView.backgroundColor];
     dotColor = [NSColor darkGrayColor];
